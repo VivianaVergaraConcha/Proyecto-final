@@ -1,0 +1,183 @@
+.imagen > img {
+  width: 100%;
+}
+
+/* CARD */
+.card {
+  width: 28%;
+  margin: 5px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-1 {
+  height: 400px;
+  background: linear-gradient(
+      rgba(234, 27, 37, 0.8) 100%,
+      rgba(234, 27, 37, 0.8) 100%
+    ),
+    url("../img/card-1.jpg");
+  background-size: 100%;
+  color: #fbfbfb;
+}
+
+.card-2 {
+  height: 400px;
+  background: linear-gradient(
+      rgba(15, 35, 60, 0.8) 100%,
+      rgba(15, 35, 60, 0.8) 100%
+    ),
+    url("../img/card-2.jpg");
+  background-size: 100%;
+  color: #fbfbfb;
+}
+
+.card-3 {
+  height: 400px;
+  background: linear-gradient(
+      rgba(234, 27, 37, 0.8) 100%,
+      rgba(234, 27, 37, 0.8) 100%
+    ),
+    url("../img/card-3.jpg");
+  background-size: 100%;
+  color: #fbfbfb;
+}
+
+.card > a {
+  color: #fbfbfb;
+  display: flex;
+  text-decoration: none;
+}
+
+.card > a:hover {
+  transition: 0.4s all ease-in-out;
+  transform: scale(0.95);
+}
+
+/* PRODUCTOS */
+.titulo {
+  width: 100%;
+}
+
+.productos {
+  margin-top: 2rem;
+}
+
+.productos > .card {
+  width: 20%;
+  margin: 5px;
+  padding: 20px;
+  align-items: flex-start;
+}
+
+.productos > .card > img {
+  width: 200px;
+}
+
+.productos > .card > button {
+  visibility: hidden;
+  padding: 0 1rem;
+  font-weight: 700;
+  color: #fbfbfb;
+  background: #ea1b25;
+  line-height: 40px;
+  height: 40px;
+  border-radius: 20px;
+  box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  width: 70%;
+}
+
+.productos > .card:hover > button {
+  visibility: visible;
+  transition: 0.4s all ease-in-out;
+  transform: scale(0.95);
+}
+
+/* POST */
+.post {
+  margin-top: 2rem;
+}
+
+.post > .card {
+  height: 250px;
+}
+
+/* NOTICIAS */
+.newsletter {
+  margin: 4rem 10rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+form > input,
+button {
+  padding: 0 1rem;
+  line-height: 40px;
+  height: 40px;
+  border: 1px solid #0f233c85;
+  border-radius: 5px;
+}
+
+form > button {
+  font-weight: 700;
+  color: #fbfbfb;
+  background: #ea1b25;
+  cursor: pointer;
+  border: none;
+}
+
+form > button:hover {
+  transition: 0.4s all ease-in-out;
+  transform: scale(0.95);
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1439px) {
+  .card-1 {
+    height: 340px;
+  }
+
+  .card-2 {
+    height: 340px;
+  }
+
+  .card-3 {
+    height: 340px;
+  }
+}
+
+@media only screen and (max-width: 1023px) {
+  .card {
+    width: 70%;
+  }
+  .card-1 {
+    height: 250px;
+    background-size: 50%;
+  }
+
+  .card-2 {
+    height: 250px;
+    background-size: 50%;
+  }
+
+  .card-3 {
+    height: 250px;
+    background-size: 50%;
+  }
+
+  .productos > .card {
+    width: 40%;
+  }
+
+  .newsletter {
+    flex-direction: column;
+  }
+
+  .newsletter > form {
+    margin-top: 1rem;
+  }
+}

@@ -1,0 +1,286 @@
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fuentes/Montserrat-Regular.ttf");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Montserrat;
+  color: #0f233c;
+}
+
+/* HEADER */
+.redes-sociales {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin: 0 10rem;
+}
+
+.redes-sociales > ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.redes-sociales > ul > li {
+  text-decoration: none;
+  padding: 0 0.3rem;
+  display: block;
+  transition: 0.4s all ease-in-out;
+}
+
+.redes-sociales > ul > li:hover {
+  transform: scale(0.95);
+}
+
+/* BARRA LOGO */
+.barra {
+  background: #0f233c;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10rem;
+  align-items: center;
+  height: 4rem;
+}
+
+.logo {
+  list-style: none;
+  color: #fbfbfb;
+  font-size: 25px;
+  transition: 0.4s all ease-in-out;
+}
+
+.logo:hover {
+  transform: scale(0.95);
+}
+
+.logo > a {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fbfbfb;
+}
+
+.rombo {
+  padding: 0.4rem;
+  float: left;
+}
+
+.rombo .contenido {
+  border-radius: 10px;
+  background-color: #ea1b25;
+  padding: 0;
+  width: 30px;
+  height: 30px;
+  margin: auto;
+  text-align: center;
+  display: block;
+  border: 5px solid #0f233c;
+  -ms-transform: rotate(45deg); /* IE 9 */
+  -webkit-transform: rotate(45deg); /* Chrome, Safari, Opera */
+  transform: rotate(45deg);
+  transition: transform 0.1s cubic-bezier(0, 1.8, 1, 1.8);
+}
+
+.rombo .contenido .texto {
+  border-radius: 4px;
+  font-weight: bold;
+  position: relative;
+  overflow: hidden;
+  top: 50%;
+  -webkit-transform: translateY(-50%) rotate(-45deg);
+  -ms-transform: translateY(-50%) rotate(-45deg);
+  transform: translateY(-50%) rotate(-45deg);
+}
+
+.logo .texto {
+  font-weight: bold;
+  color: #fbfbfb;
+}
+
+.carro {
+  width: 30px;
+}
+
+/* NAVBAR */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 10rem;
+  /* height: 70px; */
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.menu-link {
+  text-decoration: none;
+  padding: 0 0.5rem;
+  line-height: 60px;
+  display: block;
+  color: #11243d;
+}
+
+.menu-link:hover {
+  color: #ea1b25;
+  box-shadow: 0 -5px 0 0 #ea1b25 inset;
+}
+
+.activo {
+  color: #ea1b25;
+  box-shadow: 0 -5px 0 0 #ea1b25 inset;
+}
+
+.btn {
+  padding: 0 1rem;
+  font-weight: 700;
+  color: #fbfbfb;
+  background: #ea1b25;
+  line-height: 40px;
+  height: 40px;
+  border-radius: 5px;
+  box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.5);
+  transition: 0.4s all ease-in-out;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.btn:hover {
+  transform: scale(0.95);
+}
+
+/* CONTAINER */
+.container {
+  margin: 0 10rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: space-around;
+}
+
+/* FOOTER */
+.pie {
+  background: #0f233c;
+  color: #fbfbfb;
+  padding: 4rem 10rem 2rem 10rem;
+}
+
+.fila {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+}
+
+.columna {
+  width: 400px;
+  line-height: 40px;
+}
+
+.columna > .logo > a {
+  justify-content: left;
+}
+
+.columna > p {
+  line-height: normal;
+}
+
+.columna > .btn {
+  padding: 0.8rem 1rem;
+  text-decoration: none;
+}
+
+.columna > .redes-sociales {
+  margin: 1rem 0;
+  justify-content: left;
+}
+
+.copyright {
+  border-top: 1px solid #fbfbfb;
+  padding-top: 1rem;
+  margin-top: 1rem;
+  text-align: center;
+  font-size: 11px;
+}
+
+[badge]:after {
+  background: #ea1b25;
+  border-radius: 30px;
+  color: #fff;
+  content: attr(badge);
+  font-size: 11px;
+  margin-top: -10px;
+  min-width: 20px;
+  padding: 2px;
+  position: absolute;
+  text-align: center;
+}
+
+[badge^="-"]:after,
+[badge="0"]:after,
+[badge=""]:after {
+  display: none;
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1439px) {
+  .redes-sociales {
+    margin: 0 2rem;
+  }
+
+  .barra {
+    padding: 0 2rem;
+  }
+
+  .container {
+    margin: 0 2rem;
+  }
+
+  .pie {
+    padding: 2rem;
+  }
+}
+
+@media only screen and (max-width: 1023px) {
+  body {
+    background-color: chocolate;
+  }
+  .redes-sociales {
+    margin: 0 1rem;
+  }
+
+  .barra {
+    padding: 0 2rem;
+  }
+  .navbar {
+    justify-content: center;
+  }
+
+  .navbar > .btn {
+    display: none;
+  }
+
+  .container {
+    margin: 0 1rem;
+    align-items: center;
+  }
+
+  .pie {
+    padding: 1rem;
+  }
+
+  .fila {
+    flex-direction: column;
+    align-items: center;
+  }
+}

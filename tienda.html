@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>E-commerce</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/tienda.css" />
+  </head>
+
+  <body>
+    <header>
+      <div class="redes-sociales">
+        <ul>
+          <li>Siguenos</li>
+          <li>
+            <a href="#"><img src="./img/facebook-azul.png" alt="" /></a>
+          </li>
+          <li>
+            <a href="#"><img src="./img/twitter-azul.png" alt="" /></a>
+          </li>
+          <li>
+            <a href="#"><img src="./img/pinterest-azul.png" alt="" /></a>
+          </li>
+          <li>
+            <a href="#"><img src="./img/linkedin-azul.png" alt="" /></a>
+          </li>
+        </ul>
+      </div>
+      <div class="barra">
+        <div class="logo">
+          <a href="index.html">
+            <div class="rombo">
+              <div class="contenido">
+                <div class="texto">E</div>
+              </div>
+            </div>
+            <span class="texto">commerce</span>
+          </a>
+        </div>
+        <div>
+          <a href="carro.html"
+            ><img
+              src="./img/icons8-carrito-de-compras-48.png"
+              alt=""
+              class="carro" /><span id="carrito" badge=""></span
+          ></a>
+        </div>
+      </div>
+      <nav class="navbar">
+        <ul class="menu">
+          <li><a href="index.html" class="menu-link">Inicio</a></li>
+          <li><a href="tienda.html" class="menu-link activo">Tienda</a></li>
+          <li><a href="contacto.html" class="menu-link">Contactanos</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="container">
+      <div class="barra-lateral">
+        <h3>Filtros</h3>
+        <button class="accordion">Tipo</button>
+        <div class="panel" id="panelTipo">
+          <ul>
+            <li>
+              <input type="checkbox" id="cboxZapatillas" value="tipo" />
+              <label for="cboxZapatillas">Zapatillas</label>
+            </li>
+            <li>
+              <input type="checkbox" id="cboxZapatos" value="tipo" />
+              <label for="cboxZapatos">Zapatos</label>
+            </li>
+            <li>
+              <input type="checkbox" id="cboxSandalias" value="tipo" />
+              <label for="cboxSandalias">Sandalias</label>
+            </li>
+          </ul>
+        </div>
+
+        <button class="accordion">Marca</button>
+        <div class="panel" id="panelMarca">
+          <ul>
+            <li>
+              <input type="checkbox" id="cboxAdidas" value="marca" />
+              <label for="cboxAdidas">Adidas</label>
+            </li>
+            <li>
+              <input type="checkbox" id="cboxBasement" value="marca" />
+              <label for="cboxBasement">Basement</label>
+            </li>
+            <li>
+              <input type="checkbox" id="cboxConverse" value="marca" />
+              <label for="cboxConverse">Converse</label>
+            </li>
+            <li>
+              <input type="checkbox" id="cboxDisney" value="marca" />
+              <label for="cboxDisney">Disney</label>
+            </li>
+            <li>
+              <input type="checkbox" id="cboxGuante" value="marca" />
+              <label for="cboxGuante">Guante</label>
+            </li>
+            <li>
+              <input type="checkbox" id="cboxMango" value="marca" />
+              <label for="cboxMango">Mango</label>
+            </li>
+            <li>
+              <input type="checkbox" id="cboxMichael" value="marca" />
+              <label for="cboxMichael">Michael Kors</label>
+            </li>
+            <li>
+              <input type="checkbox" id="cboxNewport" value="marca" />
+              <label for="cboxNewport">Newport</label>
+            </li>
+            <li>
+              <input type="checkbox" id="cboxPuma" value="marca" />
+              <label for="cboxPuma">Puma</label>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="productos" id="divProductos">
+        <h2 class="titulo">Productos</h2>
+      </div>
+    </div>
+    <footer class="pie">
+      <div class="fila">
+        <div class="columna">
+          <div class="logo">
+            <a href="./index.html">
+              <div class="rombo">
+                <div class="contenido">
+                  <div class="texto">E</div>
+                </div>
+              </div>
+              <span class="texto">commerce</span>
+            </a>
+          </div>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum
+            culpa, tempore reprehenderit similique.
+          </p>
+          <div class="redes-sociales">
+            <ul>
+              <li>
+                <a href="#"><img src="./img/facebook-blanco.png" alt="" /></a>
+              </li>
+              <li>
+                <a href="#"><img src="./img/twitter-blanco.png" alt="" /></a>
+              </li>
+              <li>
+                <a href="#"><img src="./img/pinterest-blanco.png" alt="" /></a>
+              </li>
+              <li>
+                <a href="#"><img src="./img/linkedin-blanco.png" alt="" /></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="columna">
+          <h3>Tienes alguna duda? llamanos</h3>
+          <h2>+569 5636 5666</h2>
+          5002 Lorem ipsum dolor, Chile
+          <br />
+          <a class="btn">Encuentranos</a>
+        </div>
+      </div>
+      <div class="copyright">
+        Diseñado por ... © todos los derechos reservados
+      </div>
+    </footer>
+    <script src="./js/carrito.js"></script>
+    <script src="./js/script.js"></script>
+    <script src="./js/tienda.js"></script>
+  </body>
+</html>

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>E-commerce</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/carro.css" />
+  </head>
+
+  <body>
+    <header>
+      <div class="redes-sociales">
+        <ul>
+          <li>Siguenos</li>
+          <li>
+            <a href="#"><img src="./img/facebook-azul.png" alt="" /></a>
+          </li>
+          <li>
+            <a href="#"><img src="./img/twitter-azul.png" alt="" /></a>
+          </li>
+          <li>
+            <a href="#"><img src="./img/pinterest-azul.png" alt="" /></a>
+          </li>
+          <li>
+            <a href="#"><img src="./img/linkedin-azul.png" alt="" /></a>
+          </li>
+        </ul>
+      </div>
+      <div class="barra">
+        <div class="logo">
+          <a href="index.html">
+            <div class="rombo">
+              <div class="contenido">
+                <div class="texto">E</div>
+              </div>
+            </div>
+            <span class="texto">commerce</span>
+          </a>
+        </div>
+        <div>
+          <a href="carro.html"
+            ><img
+              src="./img/icons8-carrito-de-compras-48.png"
+              alt=""
+              class="carro" /><span id="carrito" badge="0"></span
+          ></a>
+        </div>
+      </div>
+      <nav class="navbar">
+        <ul class="menu">
+          <li><a href="index.html" class="menu-link">Inicio</a></li>
+          <li><a href="tienda.html" class="menu-link">Tienda</a></li>
+          <li><a href="contacto.html" class="menu-link">Contactanos</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="container">
+      <div class="productos" id="divProductos"></div>
+      <div class="total" id="resumenCompra">
+        <h2>Resumen de la compra</h2>
+        <div class="precioTotal">Total: <label id="total"></label></div>
+        <button class="btn btn-compra" onclick="comprar()">Comprar</button>
+      </div>
+    </div>
+    <footer class="pie">
+      <div class="fila">
+        <div class="columna">
+          <div class="logo">
+            <a href="./index.html">
+              <div class="rombo">
+                <div class="contenido">
+                  <div class="texto">E</div>
+                </div>
+              </div>
+              <span class="texto">commerce</span>
+            </a>
+          </div>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum
+            culpa, tempore reprehenderit similique.
+          </p>
+          <div class="redes-sociales">
+            <ul>
+              <li>
+                <a href="#"><img src="./img/facebook-blanco.png" alt="" /></a>
+              </li>
+              <li>
+                <a href="#"><img src="./img/twitter-blanco.png" alt="" /></a>
+              </li>
+              <li>
+                <a href="#"><img src="./img/pinterest-blanco.png" alt="" /></a>
+              </li>
+              <li>
+                <a href="#"><img src="./img/linkedin-blanco.png" alt="" /></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="columna">
+          <h3>Tienes alguna duda? llamanos</h3>
+          <h2>+569 5636 5666</h2>
+          5002 Lorem ipsum dolor, Chile
+          <br />
+          <a class="btn">Encuentranos</a>
+        </div>
+      </div>
+      <div class="copyright">
+        Diseñado por ... © todos los derechos reservados
+      </div>
+    </footer>
+
+    <!-- MODAL -->
+    <div id="myModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h1 class="titulo-modal">Su compra fue exitosa.</h1>
+        <video
+          class="video"
+          src="./resource/compra-feliz.mp4"
+          autoplay
+          muted
+          loop
+        ></video>
+      </div>
+    </div>
+
+    <script src="./js/carrito.js"></script>
+    <script src="./js/script.js"></script>
+    <script src="./js/carro.js"></script>
+  </body>
+</html>
